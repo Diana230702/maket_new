@@ -13,12 +13,37 @@
     />
 
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/adaptive.styles.css" />
   </head>
   <body>
     <div class="container">
+      <!-- burger menu start -->
+      <div class="burger-menu">
+        <div class="burger-menu__content">
+          <img
+            src="./images/cancel_btn.png"
+            alt="error"
+            class="burger-menu__btn_close"
+          />
+          <!-- <input type="text" class="burger-menu__input" /> -->
+          <ul class="burger-menu__list">
+            <li class="burger-menu__item"><a href="#">Home</a></li>
+            <li class="burger-menu__item"><a href="#">Services</a></li>
+            <li class="burger-menu__item"><a href="#">Our Project</a></li>
+            <li class="burger-menu__item"><a href="#">About US</a></li>
+          </ul>
+        </div>
+        <img
+          src="./images/burger-menu__btn.png"
+          alt="error"
+          class="navbar__btn_burger"
+        />
+      </div>
+
+      <!-- burger menu and  -->
       <!-- navbar start -->
       <div class="navbar">
-        <img src="./images/logo (2).png" alt="" />
+        <img class="navbar__logo" src="./images/logo (2).png" alt="" />
         <ul class="navbar__list">
           <li class="list__item">
             <a href="#">How it Works </a
@@ -37,12 +62,17 @@
           </li>
         </ul>
         <div id="secondblock">
-          <ul>
+          <ul class="list__item_ul">
             <li class="list__item"><a href="#">log in</a></li>
 
             <li class="list__item"><a href="#">Get started free</a></li>
           </ul>
         </div>
+        <img
+          class="navbar__btn_burger"
+          src="./images/burger-menu__btn.png"
+          alt=""
+        />
       </div>
       <!-- navbar end -->
       <!-- list 1 start -->
@@ -79,19 +109,19 @@
       <div class="logos__footer">
         <ul class="logos__footer_list">
           <li class="logos__list">
-            <img src="./images/logo1.png" alt="error" />
+            <img class="logos__list_img" src="./images/logo1.png" alt="error" />
           </li>
           <li class="logos__list">
-            <img src="./images/logo2.png" alt="error" />
+            <img class="logos__list_img" src="./images/logo2.png" alt="error" />
           </li>
           <li class="logos__list">
-            <img src="./images/logo3.png" alt="error" />
+            <img class="logos__list_img" src="./images/logo3.png" alt="error" />
           </li>
           <li class="logos__list">
-            <img src="./images/logo4.png" alt="error" />
+            <img class="logos__list_img" src="./images/logo4.png" alt="error" />
           </li>
           <li class="logos__list">
-            <img src="./images/logo5.png" alt="error" />
+            <img class="logos__list_img" src="./images/logo5.png" alt="error" />
           </li>
         </ul>
       </div>
@@ -105,24 +135,24 @@
         />
         <div class="list3__block_right">
           <ul class="list3__list">
-            <li class="list3__list_li" >
+            <li class="list3__list_li">
               <h2>Survey your team</h2>
               <p>
                 Powerful questions that get to the heart of how team members
                 really feel.
               </p>
             </li>
-            <li class="list3__list_li" >
+            <li class="list3__list_li">
               <h2>Resolve issues quickly</h2>
               <p>Anonymous messaging that connects managers and employees.</p>
             </li>
-            <li class="list3__list_li" >
+            <li class="list3__list_li">
               <h2>Plan your 1-on-1s</h2>
               <p>
                 Plan meetings together and give a stake employees and teams.
               </p>
             </li>
-            <li class="list3__list_li" >
+            <li class="list3__list_li">
               <h2>Track your progress</h2>
               <p>
                 Easy-to-read reports and sharable results help managers and
@@ -253,19 +283,19 @@
 
           <div class="last__list__item">
             <ul class="last__item">
-              <li class=" last__list_item__li">
+              <li class="last__list_item__li">
                 <img src="./images/lastfoto1.png" alt="" />
                 <h6 class="last_list__h6">Jorge Robertson</h6>
                 <p class="last_list__p">CS at Google</p>
               </li>
 
-              <li class=" last__list_item__li" >
+              <li class="last__list_item__li">
                 <img src="./images/lastfoto2.png" alt="" />
                 <h6 class="last_list__h6">Francisco Bell</h6>
                 <p class="last_list__p">Designer at Microsoft</p>
               </li>
 
-              <li class=" last__list_item__li">
+              <li class="last__list_item__li">
                 <img src="./images/lastfoto3.png" alt="" />
                 <h6 class="last_list__h6">Beth Fox</h6>
                 <p class="last_list__p">Developer at Airbnb</p>
@@ -273,15 +303,21 @@
             </ul>
           </div>
           <div class="last__list__foot">
-        
-            <p class="lastlist__p">84% of employees who use
-          trust their direct manager</p>
-          <img class="lastlist__image" src="./images/google-play-badge 1.png" alt="error">
-          <img class="lastlist__image" src="./images/app-store-bagge.png" alt="error">
-
+            <p class="lastlist__p">
+              84% of employees who use trust their direct manager
+            </p>
+            <img
+              class="lastlist__image"
+              src="./images/google-play-badge 1.png"
+              alt="error"
+            />
+            <img
+              class="lastlist__image"
+              src="./images/app-store-bagge.png"
+              alt="error"
+            />
           </div>
         </div>
-      
       </div>
       <!-- last list end -->
       <footer>
@@ -299,27 +335,63 @@
             <li class="footer__block_li">
               <a class="footer__block__a" href="#"><strong>Support</strong></a>
             </li>
-            <li class="footer__block_li"></li><a class="footer__block__a" href="#">Help Center</a></li>
-            <li><a class="footer__block__a"  href="#">Safety Centerg</a></li>
+            <li class="footer__block_li">
+              <a class="footer__block__a" href="#">Help Center</a>
+            </li>
+            <li><a class="footer__block__a" href="#">Safety Centerg</a></li>
             <li><a class="footer__block__a" href="#">Community</a></li>
           </ul>
           <ul class="footer__block_list">
-            <li class="footer__block_li"></li>
+            <li class="footer__block_li">
               <a class="footer__block__a" href="#"><strong>Legal</strong></a>
             </li>
-            <li class="footer__block_li"></li><a class="footer__block__a" href="#">Cookies Policy</a></li>
-            <li class="footer__block_li"></li><a class="footer__block__a" href="#">Privacy Policy</a></li>
-            <li class="footer__block_li"></li><a class="footer__block__a" href="#">Terms of Service</a></li>
+
+            <li class="footer__block_li">
+              <a class="footer__block__a" href="#">Cookies Policy</a>
+            </li>
+            <li class="footer__block_li">
+              <a class="footer__block__a" href="#">Privacy Policy</a>
+            </li>
+            <li class="footer__block_li">
+              <a class="footer__block__a" href="#">Terms of Service</a>
+            </li>
           </ul>
           <ul class="footer__block_list">
             <li class="footer__block_li">
-              <a class="footer__block__a" href="#"><strong>Install app</strong></a>
+              <a class="footer__block__a" href="#"
+                ><strong>Install app</strong></a
+              >
             </li>
-            <li><img class="footer__block_img" src="./images/google-play.png" alt="error" /></li>
-            <li><img class="footer__block_img" src="./images/app-store.png" alt="" /></li>
+            <li>
+              <img
+                class="footer__block_img"
+                src="./images/google-play.png"
+                alt="error"
+              />
+            </li>
+            <li>
+              <img
+                class="footer__block_img"
+                src="./images/app-store.png"
+                alt=""
+              />
+            </li>
           </ul>
         </div>
       </footer>
     </div>
+    <script>
+      let openBtn = document.querySelector(".navbar__btn_burger");
+      let closeBtn = document.querySelector(".burger-menu__btn_close");
+      let burgerMenu = document.querySelector(".burger-menu");
+
+      openBtn.addEventListener("click", () => {
+        burgerMenu.style.display = "block";
+      });
+
+      closeBtn.addEventListener("click", () => {
+        burgerMenu.style.display = "none";
+      });
+    </script>
   </body>
 </html>
